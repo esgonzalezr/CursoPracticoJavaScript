@@ -5,12 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometric Figures | Curso práctico JS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Geometric Figures | Practical Course JS</title>
 </head>
 
 <body>
-    <h1>Geometric Figures</h1>
+    <header>
+        <h1>Geometric Figures</h1>
+        <p>This is the first practice of the practical JS course</p>
+    </header>
 
+    <section>
+        <div id="wrapper">
+            <div id="squareCalcs" class="calcArea">
+                <h2>Square area and perimeter calculator</h2>
+                <form action="">
+                    <label for="inputSquare">Please enter the measures of each side of the square: </label>
+                    <input type="number" id="inputSquare" />
+                    <br />
+                    <br />
+                    <button type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
+                    <button type="button" onclick="calculateSquareArea()">Calculate area</button>
+                </form>
+            </div>
+            <div id="triangleCalcs" class="calcArea">
+                <h2>Triangle area and perimeter calculator</h2>
+                <form action="">
+                    <label for="inputTriangleSide1">Measure of the side 1: </label>
+                    <br />
+                    <input type="number" id="inputTriangleSide1" />
+                    <br />
+                    <label for="inputTriangleSide2">Measure of the side 2: </label>
+                    <br />
+                    <input type="number" id="inputTriangleSide2" />
+                    <br />
+                    <label for="inputTriangleBase">Measure of the base:</label>
+                    <br />
+                    <input type="number" id="inputTriangleBase" />
+                    <br />
+                    <label for="inputTriangleHeight">Triangle height:</label>
+                    <br />
+                    <input type="number" id="inputTriangleHeight" />
+                    <br />
+                    <br />
+                    <button type="button" onclick="calculateTrianglePerimeter()">Calculate perimeter</button>
+                    <button type="button" onclick="calculateTriangleArea()">Calculate area</button>
+                </form>
+            </div>
+            <div id="circleCalcs" class="calcArea">
+                <h2>Circle area and perimeter calculator</h2>
+                <form action="">
+                    <label for="inputCircle">Please enter the radius of the circle: </label>
+                    <input type="number" id="inputCircle" />
+                    <br />
+                    <br />
+                    <button type="button" onclick="calculateCircleDiameter()">Calculate diameter</button>
+                    <button type="button" onclick="calculateCirclePerimeter()">Calculate perimeter</button>
+                    <button type="button" onclick="calculateCircleArea()">Calculate area</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
 
     <script type="text/javascript" src="figuras.js"></script>
